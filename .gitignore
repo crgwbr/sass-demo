@@ -18,3 +18,6 @@ Icon
 # SublimeText project files
 *.sublime-*
 
+### SASS ###
+#### SASS Ignores - "Sassy CSS" http://sass-lang.com/
+#*.sass-cache
