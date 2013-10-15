@@ -1,0 +1,29 @@
+/**
+ * SASS Demo Base File
+ */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "settings";
+@import "typography";
+@import "grid";
+
+html {
+    background-color: $color-background;
+    color: $color-text;
+}
+
+body {
+    @include box-shadow(0 0 60px $color-text);
+
+    & > div.inner {
+        padding: 1em;
+    }
+}
+
+hr {
+    border-top: none;
+    border-bottom: 1px solid darken($color-background, 20%);
+    margin: 2em 0;
+}

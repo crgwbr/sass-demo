@@ -1,0 +1,105 @@
+/**
+ * SASS Demo Typography
+ */
+
+%weight-bold {
+    font-weight: bold;
+}
+
+%weight-normal {
+    font-weight: normal;
+}
+
+%style-italic {
+    font-style: italic;
+}
+
+%font-body {
+    font-size: $size-base;
+    line-height: $height-base;
+    font-family: $font-stack-body;
+}
+
+%font-header {
+    font-size: $size-base;
+    line-height: 0.9;
+    font-family: $font-stack-header;
+}
+
+
+html {
+    @extend %font-body;
+}
+
+h1, h2, h3, h4, h5 {
+    @extend %font-header;
+    margin-top: 0.75em;
+}
+
+h4, h5, h6 {
+    color: $color-emphasis;
+}
+
+h1 {
+    font-size: $size-base * 6;
+    @extend %weight-bold;
+}
+
+h2 {
+    font-size: $size-base * 2.5;
+    @extend %weight-normal;
+}
+
+h3 {
+    font-size: $size-base * 2;
+    @extend %weight-normal;
+}
+
+h3 {
+    font-size: $size-base * 1.7;
+    @extend %weight-normal;
+}
+
+h4 {
+    font-size: $size-base * 1.5;
+    @extend %weight-normal;
+}
+
+h5 {
+    font-size: $size-base * 1.3;
+    @extend %weight-bold;
+    @extend %style-italic;
+}
+
+h6 {
+    @extend %font-body;
+    @extend %weight-bold;
+}
+
+p {
+    margin-bottom: 0.7em;
+}
+
+a {
+    @extend %weight-bold;
+    color: $color-text;
+
+    &:visited {
+        color: lighten($color-text, 20%);
+    }
+
+    &:hover {
+        color: $color-emphasis;
+    }
+}
+
+code, pre {
+    font-family: $font-stack-code;
+}
+
+blockquote {
+    width: 50%;
+    margin: 2%;
+    padding-left: 1%;
+    border-left: 10px solid darken($color-background, 20%);
+}

@@ -1,0 +1,51 @@
+/**
+ * SASS Demo Base File
+ */
+
+$grid-columns: 16;
+$grid-gutter: 1%;
+
+body {
+    width: 95%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.gridRow {
+    margin-top: $grid-gutter;
+    margin-right: -$grid-gutter;
+    margin-bottom: $grid-gutter;
+    margin-left: -$grid-gutter;
+    clear: both;
+}
+
+@for $i from 1 through $grid-columns {
+    .grid#{$i} {
+        margin-right: $grid-gutter;
+        margin-left: $grid-gutter;
+        float: left;
+
+        @if $i > 4 {
+            width: 100% - ($grid-gutter * 2);
+        } @else {
+            width: (100% / ($grid-columns / 4)) * $i - ($grid-gutter * 2);
+        }
+
+        @media screen and (min-width: $width-tablet) {
+            @if $i > 8 {
+                width: 100% - ($grid-gutter * 2);
+            } @else {
+                width: (100% / ($grid-columns / 2)) * $i - ($grid-gutter * 2);
+            }
+        }
+
+        @media screen and (min-width: $width-desktop) {
+            width: (100% / $grid-columns) * $i - ($grid-gutter * 2);
+        }
+    }
+}

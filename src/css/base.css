@@ -1,0 +1,542 @@
+/**
+ * SASS Demo Base File
+ */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * SASS Demo Settings
+ */
+/**
+ * SASS Demo Typography
+ */
+/* line 5, ../scss/_typography.scss */
+h1, h5, h6, a {
+  font-weight: bold;
+}
+
+/* line 9, ../scss/_typography.scss */
+h2, h3, h4 {
+  font-weight: normal;
+}
+
+/* line 13, ../scss/_typography.scss */
+h5 {
+  font-style: italic;
+}
+
+/* line 17, ../scss/_typography.scss */
+html, h6 {
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 23, ../scss/_typography.scss */
+h1, h2, h3, h4, h5 {
+  font-size: 13px;
+  line-height: 0.9;
+  font-family: Georgia, serif;
+}
+
+/* line 34, ../scss/_typography.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0.75em;
+}
+
+/* line 39, ../scss/_typography.scss */
+h4, h5, h6 {
+  color: #660000;
+}
+
+/* line 43, ../scss/_typography.scss */
+h1 {
+  font-size: 78px;
+}
+
+/* line 48, ../scss/_typography.scss */
+h2 {
+  font-size: 32.5px;
+}
+
+/* line 53, ../scss/_typography.scss */
+h3 {
+  font-size: 26px;
+}
+
+/* line 58, ../scss/_typography.scss */
+h3 {
+  font-size: 22.1px;
+}
+
+/* line 63, ../scss/_typography.scss */
+h4 {
+  font-size: 19.5px;
+}
+
+/* line 68, ../scss/_typography.scss */
+h5 {
+  font-size: 16.9px;
+}
+
+/* line 79, ../scss/_typography.scss */
+p {
+  margin-bottom: 0.7em;
+}
+
+/* line 83, ../scss/_typography.scss */
+a {
+  color: #333333;
+}
+/* line 87, ../scss/_typography.scss */
+a:visited {
+  color: #666666;
+}
+/* line 91, ../scss/_typography.scss */
+a:hover {
+  color: #660000;
+}
+
+/* line 96, ../scss/_typography.scss */
+code, pre {
+  font-family: Monaco, Consolas, fixed-width;
+}
+
+/* line 100, ../scss/_typography.scss */
+blockquote {
+  width: 50%;
+  margin: 2%;
+  padding-left: 1%;
+  border-left: 10px solid #cccccc;
+}
+
+/**
+ * SASS Demo Base File
+ */
+/* line 8, ../scss/_grid.scss */
+body {
+  width: 95%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 15, ../scss/_grid.scss */
+.clear {
+  clear: both;
+}
+
+/* line 19, ../scss/_grid.scss */
+.gridRow {
+  margin-top: 1%;
+  margin-right: -1%;
+  margin-bottom: 1%;
+  margin-left: -1%;
+  clear: both;
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid1 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 23%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid1 {
+    width: 10.5%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid1 {
+    width: 4.25%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid2 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 48%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid2 {
+    width: 23%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid2 {
+    width: 10.5%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid3 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 73%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid3 {
+    width: 35.5%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid3 {
+    width: 16.75%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid4 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid4 {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid4 {
+    width: 23%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid5 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid5 {
+    width: 60.5%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid5 {
+    width: 29.25%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid6 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid6 {
+    width: 73%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid6 {
+    width: 35.5%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid7 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid7 {
+    width: 85.5%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid7 {
+    width: 41.75%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid8 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid8 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid8 {
+    width: 48%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid9 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid9 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid9 {
+    width: 54.25%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid10 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid10 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid10 {
+    width: 60.5%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid11 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid11 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid11 {
+    width: 66.75%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid12 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid12 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid12 {
+    width: 73%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid13 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid13 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid13 {
+    width: 79.25%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid14 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid14 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid14 {
+    width: 85.5%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid15 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid15 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid15 {
+    width: 91.75%;
+  }
+}
+
+/* line 28, ../scss/_grid.scss */
+.grid16 {
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 98%;
+}
+@media screen and (min-width: 600px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid16 {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 28, ../scss/_grid.scss */
+  .grid16 {
+    width: 98%;
+  }
+}
+
+/* line 12, ../scss/base.scss */
+html {
+  background-color: white;
+  color: #333333;
+}
+
+/* line 17, ../scss/base.scss */
+body {
+  -webkit-box-shadow: 0 0 60px #333333;
+  -moz-box-shadow: 0 0 60px #333333;
+  box-shadow: 0 0 60px #333333;
+}
+/* line 20, ../scss/base.scss */
+body > div.inner {
+  padding: 1em;
+}
+
+/* line 25, ../scss/base.scss */
+hr {
+  border-top: none;
+  border-bottom: 1px solid #cccccc;
+  margin: 2em 0;
+}
